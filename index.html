@@ -6,22 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blanchart</title>
     <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <img class="header__logo" src="/img/logo.svg" />
+        <div class="header__inner">
+          <img class="header__logo" src="/img/logo.svg" />
+          <nav class="nav">
+            <a href="#aboutus" class="nav__link">О нас</a>
+            <a href="#gallery" class="nav__link">Галерея</a>
+            <a href="#catalog" class="nav__link">Каталог</a>
+            <a href="#developments" class="nav__link">События</a>
+            <a href="#editions" class="nav__link">Издания</a>
+            <a href="#projects" class="nav__link">Проекты</a>
+            <a href="#contacts" class="nav__link">Контакты</a>
+          </nav>
+          <a href="" class="header__auth">
+            <svg
+              class="header__auth-icon"
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                fill="inherit"
+              />
+            </svg>
+            Выход
+          </a>
+        </div>
       </div>
-      <nav class="nav">
-        <a href="" class="nav__link">О нас</a>
-        <a href="" class="nav__link">Галерея</a>
-        <a href="" class="nav__link">Каталог</a>
-        <a href="" class="nav__link">События</a>
-        <a href="" class="nav__link">Издания</a>
-        <a href="" class="nav__link">Проекты</a>
-        <a href="" class="nav__link">Контакты</a>
-      </nav>
-      <a href="" class="header__auth">Выход</a>
     </header>
+    <main class="main">
+      <section class="section">
+        <div class="hero">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="hero__bg" src="/img/hero1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="hero__bg" src="/img/hero2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="hero__bg" src="/img/hero3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="hero__content">
+              <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+              <p class="hero__desc">
+                Мы вынуждены отталкиваться от того, что реализация намеченных
+                плановых заданий создаёт предпосылки для новых предложений.
+              </p>
+              <button class="btn hero__btn">Подписаться на рассылку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__header">О нас</h2>
+          <div class="section__body">
+            <p class="about-us">
+              Ясность нашей позиции очевидна: семантический разбор внешних
+              противодействий однозначно определяет каждого участника как
+              способного принимать собственные решения касаемо распределения
+              внутренних резервов и ресурсов. Не следует, однако, забывать, что
+              высококачественный прототип будущего проекта влечет за собой
+              процесс внедрения и модернизации модели развития. Повседневная
+              практика показывает, что высокое качество позиционных исследований
+              создаёт необходимость включения в производственный план целого
+              ряда внеочередных мероприятий с учётом комплекса распределения
+              внутренних резервов и ресурсов. В рамках спецификации современных
+              стандартов, действия представителей оппозиции набирают
+              популярность среди определенных слоев населения, а значит, должны
+              быть разоблачены.
+            </p>
+          </div>
+        </div>
+      </section>
+                                   
+      <section id="gallery" class="section">
+        <div class="section__body">
+          <div class="gallery">
+            <div class="container">
+              <div class="gallery__content">
+                <h3 class="gallery__title section-title">Галерея</h3>
+                <p class="gallery__text section-text">
+                  Вам предоставляется 10 бесплатных скачиваний. Для увеличения
+                  количества <br />
+                  скачиваний
+                  <a class="link__authorizsation" href="0">авторизуйтесь</a> ,
+                  либо воспользуйтесь лицензией.
+                </p>
+              </div>
+              <div class="swiper gallery__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/img/Rectangle 70.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/Rectangle 69.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/Rectangle 68.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/Rectangle 72.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/Rectangle 73.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/Rectangle 71.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                </div>
+              </div>
+            </div>
+            <img
+              class="gallery__bg"
+              src="img/birmingham-museums-trust-MK_98NuC4-4-unsplash 3.jpg"
+            />
+          </div>
+        </div>
+      </section>
+
+                      
+      <section id="catalog" class="catalog">
+        <section class="section">
+          <div class="header__catalog">
+            <h4 class="catalog__title section--title">Каталог</h4>
+          </div>
+        </section>
+      </section>
+                  
+      <section id="developments" class="developments"></section>
+               
+      <section id="editions" class="editions"></section>
+
+      <section id="projects" class="projects"></section>
+
+      <section id="contacts" class="contacts"></section>
+                          
+    </main>
+
+    <footer class="footer"></footer>
+    <script src="/main.js"></script>
   </body>
 </html>
